@@ -49,7 +49,7 @@ img {
 
 
 .autor {
-    color: rgb(238, 229, 229);
+    color: rgb(231, 229, 229);
     font-style: italic;
     padding-top: 10px;
 }
@@ -65,7 +65,7 @@ img {
 }
 
 .menu a {
-    color:rgb(173, 167, 167);
+    color:rgb(155, 155, 155);
     text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ img {
 }
 
 .menu li {
-    border-bottom: 1px solid rgb(173, 167, 167);
+    border-bottom: 1px solid rgb(155, 155, 155);
     padding: 1rem 0;
 }
 
@@ -84,7 +84,7 @@ img {
 .fotka a,
 .paticka,
 .paticka a {
-    color: rgb(173, 167, 167);
+    color: rgb(155, 155, 155);
     font-size: 10px;
     text-align: center;
 }
