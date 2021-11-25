@@ -23,7 +23,6 @@ h1 {
 }
 
 h2 {
-    text-decoration: underline #629edb 6px;
     padding: 0 2rem;
   
 }
@@ -76,7 +75,7 @@ img {
 }
 
 .menu li {
-    border-bottom: 1px solid rgb(155, 155, 155);
+    border-bottom: 1px solid rgb(153, 139, 139);
     padding: 1rem 0;
 }
 
@@ -101,3 +100,70 @@ img {
    
 }
 
+
+
+.linka::after {
+    content: "";
+    background: rgb(58, 140, 207);
+    display: block;
+    height: 5px;
+    width: 90px;
+    position: relative;
+    right: 2rem;
+    margin-top: 1rem;
+}
+
+.autor::before {
+    content: "";
+    background: rgb(231, 229, 229);
+    display: block;
+    height: 1px;
+    width: 100px;
+    margin:auto;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+
+    .menu {
+        display: flex;
+        justify-content: center;
+       }
+
+    .menu li {
+        border: none;
+        border-top:1px solid rgb(153, 139, 139);
+        border-bottom:1px solid rgb(153, 139, 139);
+    }
+
+    .menu li:nth-child(2),
+    .menu li:nth-child(3),
+    .menu li:nth-child(4) {
+        border-left: 1px solid rgb(153, 139, 139);;
+    }
+
+    .menu a {
+        margin: 0 1rem;
+        text-align: center;
+    }
+
+    .obrazek {
+        position: relative;
+    }
+
+    .obrazek .fotka {
+        right:0;
+        position: absolute;
+        bottom: 5px;
+        color: white;
+        }
+    
+    .obrazek a {
+        color: white;
+    }
+   
+   
+    
+
+   
+}
