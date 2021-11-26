@@ -161,9 +161,34 @@ img {
     .obrazek a {
         color: white;
     }
-   
-   
-    
+
+    .foto {
+        position: relative;
+        width: 50%;
+        display: flex;
+        
+     
+        }
+
+    .kontejner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foto p {
+        position: absolute;
+        bottom: 5px;
+        color: white;
+    }
 
    
+}
+
+@media (min-width:1001px) {
+
+.PC {
+    width: 960px;
+    margin: -4rem auto;
+    background-color: white;
+}
+
 }
