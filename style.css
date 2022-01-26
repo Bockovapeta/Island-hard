@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding:0;
     font-family: 'Merriweather', serif;
-    background-color: #f5f5f5;
+    background-color: #ffefe0f1;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -35,9 +35,23 @@ img {
 .popisek a,
 .paticka,
 .paticka a {
-    color: rgb(155, 155, 155);
+    color: rgb(82, 36, 36);
     font-size: 10px;
     text-align: center;
+    list-style: none;
+}
+
+.kontakt a {
+    color: rgb(6, 119, 57);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.uvod a {
+    color: rgb(6, 119, 57);
+    text-decoration: none;
 }
 
 .fotogalerie img {
@@ -47,7 +61,7 @@ img {
 
 .linka::after {
     content: "";
-    background: rgb(58, 140, 207);
+    background: rgb(6, 119, 57);
     display: block;
     height: 5px;
     width: 90px;
@@ -72,9 +86,10 @@ img {
     padding: 2rem;
     color: white;
     text-align: center;
-    background-image: url(images/island-hlavicka.jpg);
+    background-image: url(images\hlavicka.jpg);
     background-size: cover;
     background-position: center;
+  
 }
 
 .hlavicka p {
@@ -95,11 +110,13 @@ img {
     text-transform: uppercase;
     list-style-type: none;
     padding: 1rem 3rem;
+    margin:0;
 }
 
 .menu a {
-    color:rgb(155, 155, 155);
+    color:rgb(6, 119, 57);
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .menu a:hover,
@@ -113,12 +130,18 @@ img {
     padding: 1rem 0;
 }
 
+.mini p {
+    font-size: 10px;
+    margin-bottom:10px;
+}
+
 /*patička*/
 
 .paticka {
     background: linear-gradient(to bottom, rgb(231, 229, 229), white);
     text-align: left;
     padding-top:10px;
+
 }
 
 .paticka p {
@@ -128,6 +151,12 @@ img {
 /*verze pro tablet*/
 @media (min-width: 500px) and (max-width: 1000px) {
 
+        .mini {
+            margin-bottom: 0;
+        }   
+        body {
+            background-color: #ffefe0f1;
+        }
         .menu {
             display: flex;
             justify-content: center;
@@ -141,7 +170,8 @@ img {
 
         .menu li:nth-child(2),
         .menu li:nth-child(3),
-        .menu li:nth-child(4) {
+        .menu li:nth-child(4),
+        .menu li:nth-child(5) {
             border-left: 1px solid rgb(153, 139, 139);;
         }
 
@@ -187,6 +217,7 @@ img {
 
         .telo {
             background-color: white;
+
         }
 
         .fotka {
@@ -204,6 +235,8 @@ img {
             opacity: 0.7;
             font-size: 14px;
         }
+
+       
     }
 
 /*verze pro PC*/
@@ -213,6 +246,10 @@ img {
             width: 960px;
             margin: -3rem auto;
             background: white;
+        }
+
+        body {
+            background-color: #cc8b4af1;
         }
 
         .autor {
@@ -295,7 +332,7 @@ img {
         .paticka {
             width: 960px;
             margin: auto;
-            padding-top: 50px;
+            padding-top: 10px;
         }
             
     }
